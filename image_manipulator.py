@@ -11,6 +11,8 @@ async def deconstruct(pindgris: str, new_image: UploadFile = File(...)):
     #extract Exif datapoints
     exifdata = meta_data.getexif()
 
+    return exifdata
+
     '''
     for tag_id, data in exifdata.items():
         # get the tag name, instead of human unreadable tag id
@@ -25,4 +27,3 @@ async def deconstruct(pindgris: str, new_image: UploadFile = File(...)):
 
         print(f"{tag}: {data}")
     '''
-    
