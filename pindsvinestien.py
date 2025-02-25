@@ -1,9 +1,6 @@
 #from google.cloud import storage
 from fastapi import FastAPI, File, UploadFile
-from PIL import Image
-from PIL.ExifTags import TAGS
 import pillow_heif
-import io
 from image_manipulator import deconstruct
 
 # Enable HEIC support
